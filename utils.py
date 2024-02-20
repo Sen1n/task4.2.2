@@ -13,3 +13,26 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+
+
+def is_power_of_five(num):
+    """Check if a number is a power of 5."""
+    if num == 1:
+        return True
+    elif num < 1:
+        return False
+    else:
+        while num % 5 == 0:
+            num /= 5
+        return num == 1
+
+def is_power_of_two(num):
+    """Check if a number is a power of 2."""
+    if num == 1:
+        return True
+    elif num < 1:
+        return False
+    else:
+        while num % 2 == 0:
+            num /= 2
+        return num == 1
