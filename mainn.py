@@ -11,6 +11,18 @@ def main():
 if __name__ == "__main__":
     main()
 
+from utils import is_power_of_two
+
+def main():
+    number = int(input("Введіть число: "))
+    if is_power_of_two(number):
+        print(f"{number} є степенем числа 2.")
+    else:
+        print(f"{number} не є степенем числа 2.")
+
+if __name__ == "__main__":
+    main()
+
 number = 7
 if is_prime(number):
     print(f'{number} is a prime number')
